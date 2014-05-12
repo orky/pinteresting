@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :pins
 
   devise_for :users
-  root "pages#home" #this is the root path, home
+  root "pins#index" #this is the root path, home
   get "about" => "pages#about" #creates about_path
 
   # The priority is based upon order of creation: first created -> highest priority.
